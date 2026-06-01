@@ -1,0 +1,73 @@
+# IaaS Area
+- name: iaas-maintainers
+  description: Maintainers of IronCore IaaS
+  members:
+    - afritzler
+    - adracus
+    - balpert89
+    - friegger
+    - gonzolino
+    - lukasfrank
+
+- name: iaas-contributors
+  description: Contributors of IronCore IaaS
+  members:
+    - kasabe28
+    - mkalcok
+    - Rohit-0505
+    - sujeet01
+    - ushabelgur
+
+# Metal Area
+- name: metal-maintainers
+  description: Maintainers of IronCore Metal
+  members:
+    - adracus
+    - afritzler
+    - defo89
+    - hardikdr
+
+- name: metal-contributors
+  description: Contributors of IronCore Metal
+  members:
+    - anton-paulovich
+    - asergeant01
+    - atd9876
+    - damyan
+    - gonzolino
+    - maxmoehl
+    - nagadeesh-nagaraja
+    - stefanhipfel
+    - xkonni
+
+# Network Area
+- name: network-maintainers
+  description: Maintainers of IronCore Network
+  members:
+    - adracus
+    - byteocean
+    - maxmoehl
+    - PlagueCZ
+    - peanball
+
+- name: network-contributors
+  description: Contributors of IronCore Network
+  members:
+    - damyan
+    - Giluerre
+    - hardikdr
+    - kasabe28
+    - Rohit-0505
+
+- name: tsc
+  description: Technical Steering Committee
+  members:
+    - afritzler
+    - balpert89
+    - fa-at-pulsit
+    - FlorinPeter
+    - gehoern
+    - lukasfrank
+    - maxmoehl
+    - mTarabyte
+    - schucly

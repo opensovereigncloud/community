@@ -1,0 +1,372 @@
+# IaaS Area
+- name: ceph-provider
+  description: Ceph provider implementation of the IronCore storage interface
+  collaborators:
+    teams:
+      - name: iaas-maintainers
+        permission: push
+      - name: iaas-contributors
+        permission: pull
+
+- name: cloud-hypervisor-provider
+  description: Cloud-hypervisor provider implementation of the IronCore compute interface
+  collaborators:
+    teams:
+      - name: iaas-maintainers
+        permission: push
+      - name: iaas-contributors
+        permission: pull
+
+- name: cloud-provider-ironcore
+  description: Kubernetes Cloud Controller Provider implementation for IronCore
+  collaborators:
+    teams:
+      - name: iaas-maintainers
+        permission: push
+      - name: iaas-contributors
+        permission: pull
+
+- name: FeOS
+  description: A Rust-based init system for Linux, specifically tailored for secure and efficient management of containers, VMs, and MicroVMs in clustered server and multi-tenant environments.
+  collaborators:
+    teams:
+      - name: iaas-maintainers
+        permission: push
+      - name: iaas-contributors
+        permission: pull
+
+- name: gardener-extension-provider-ironcore
+  description: Gardener extension controller for the IronCore cloud provider
+  collaborators:
+    teams:
+      - name: iaas-maintainers
+        permission: push
+      - name: iaas-contributors
+        permission: pull
+
+- name: ironcore
+  description: Cloud Native Infrastructure as a Service
+  collaborators:
+    teams:
+      - name: iaas-maintainers
+        permission: push
+      - name: iaas-contributors
+        permission: pull
+
+- name: ironcore-csi-driver
+  description: Kubernetes Container Storage Interface (CSI) Driver for IronCore
+  collaborators:
+    teams:
+      - name: iaas-maintainers
+        permission: push
+      - name: iaas-contributors
+        permission: pull
+
+- name: ironcore-image
+  description: IronCore OCI Image Specification, Library and Tooling
+  collaborators:
+    teams:
+      - name: iaas-maintainers
+        permission: push
+      - name: iaas-contributors
+        permission: pull
+
+- name: ironcore-in-a-box
+  description: IronCore IaaS in a Box
+  collaborators:
+    teams:
+      - name: iaas-maintainers
+        permission: push
+      - name: iaas-contributors
+        permission: pull
+
+- name: kubectl-ironcore
+  description: kubectl plugin for ironcore
+  collaborators:
+    teams:
+      - name: iaas-maintainers
+        permission: push
+      - name: iaas-contributors
+        permission: pull
+
+- name: libvirt-provider
+  description: Libvirt provider implementation of the IronCore compute interface
+  collaborators:
+    teams:
+      - name: iaas-maintainers
+        permission: push
+      - name: iaas-contributors
+        permission: pull
+
+- name: machine-controller-manager-provider-ironcore
+  description: Gardener machine controller manager provider for IronCore
+  collaborators:
+    teams:
+      - name: iaas-maintainers
+        permission: push
+      - name: iaas-contributors
+        permission: pull
+
+# Metal Area
+- name: boot-operator
+  description: Kubernetes-based controller to manage Boot Infrastructure e.g. HTTPBoot, IPXEBoot
+  collaborators:
+    teams:
+      - name: metal-maintainers
+        permission: push
+      - name: metal-contributors
+        permission: pull
+
+- name: cloud-provider-metal
+  description: Kubernetes cloud controller manager for the IronCore metal API
+  collaborators:
+    teams:
+      - name: metal-maintainers
+        permission: push
+      - name: metal-contributors
+        permission: pull
+
+- name: cluster-api-provider-ironcore-metal
+  description: Cluster API implementation for IronCore bare metal
+  collaborators:
+    teams:
+      - name: metal-maintainers
+        permission: push
+      - name: metal-contributors
+        permission: pull
+
+- name: FeDHCP
+  collaborators:
+    teams:
+      - name: metal-maintainers
+        permission: push
+      - name: metal-contributors
+        permission: pull
+
+- name: gardener-extension-provider-ironcore-metal
+  description: Gardener extension controller for the IronCore Metal API cloud provider
+  collaborators:
+    teams:
+      - name: metal-maintainers
+        permission: push
+      - name: metal-contributors
+        permission: pull
+
+- name: ipam
+  description: k8s operator for IPAM
+  collaborators:
+    teams:
+      - name: metal-maintainers
+        permission: push
+      - name: metal-contributors
+        permission: pull
+
+- name: machine-controller-manager-provider-ironcore-metal
+  description: Gardener machine controller manager provider for bare metal server management
+  collaborators:
+    teams:
+      - name: metal-maintainers
+        permission: push
+      - name: metal-contributors
+        permission: pull
+
+- name: metal-load-balancer-controller
+  description: Service IP announcement controller using the metalbond route reflector
+  collaborators:
+    teams:
+      - name: metal-maintainers
+        permission: push
+      - name: metal-contributors
+        permission: pull
+
+- name: metal-operator
+  description: Kubernetes operator for automating bare metal server discovery and provisioning
+  homepage_url: https://ironcore.dev/metal-operator/
+  topics:
+    - "baremetal"
+    - "operator"
+    - "provisioning"
+    - "servermanagement"
+  pages_enabled: true
+  collaborators:
+    teams:
+      - name: metal-maintainers
+        permission: push
+      - name: metal-contributors
+        permission: pull
+
+- name: metal-token-rotate
+  description: Delivers tokens for metal-operator into Gardener
+  collaborators:
+    teams:
+      - name: metal-maintainers
+        permission: push
+      - name: metal-contributors
+        permission: pull
+
+- name: metaldata
+  collaborators:
+    teams:
+      - name: metal-maintainers
+        permission: push
+      - name: metal-contributors
+        permission: pull
+
+# Network Area
+- name: dpservice
+  description: DPDK based fast Dataplane / L3 router / SDN enabler, installable on compute nodes / SmartNICs
+  collaborators:
+    teams:
+      - name: network-maintainers
+        permission: push
+      - name: network-contributors
+        permission: pull
+
+- name: ebpf-nat64
+  description: eBPF-based implementation of NAT64 running on routers.
+  collaborators:
+    teams:
+      - name: network-maintainers
+        permission: push
+      - name: network-contributors
+        permission: pull
+
+- name: ironcore-net
+  description: Provider specific implementation of ironcore network types
+  collaborators:
+    teams:
+      - name: network-maintainers
+        permission: push
+      - name: network-contributors
+        permission: pull
+
+- name: metalbond
+  description: Route reflector for IronCore Infrastructure Overlay Network
+  collaborators:
+    teams:
+      - name: network-maintainers
+        permission: push
+      - name: network-contributors
+        permission: pull
+
+- name: metalnet
+  description: Kubernetes controller managing dpservice networking resources
+  collaborators:
+    teams:
+      - name: network-maintainers
+        permission: push
+      - name: network-contributors
+        permission: pull
+
+- name: sonic-operator
+  description: Kubernetes operator for automating switch devices
+  collaborators:
+    teams:
+      - name: network-maintainers
+        permission: push
+      - name: network-contributors
+        permission: pull
+
+# Multi-Area: IaaS + Metal
+- name: os-images
+  description: Automates the publication of OS images as OCI artifacts
+  collaborators:
+    teams:
+      - name: iaas-maintainers
+        permission: push
+      - name: iaas-contributors
+        permission: pull
+      - name: metal-maintainers
+        permission: push
+      - name: metal-contributors
+        permission: pull
+
+# Multi-Area: IaaS + Metal + Network
+- name: controller-utils
+  description: Utility library for writing Kubernetes controllers
+  collaborators:
+    teams:
+      - name: iaas-maintainers
+        permission: push
+      - name: iaas-contributors
+        permission: pull
+      - name: metal-maintainers
+        permission: push
+      - name: metal-contributors
+        permission: pull
+      - name: network-maintainers
+        permission: push
+      - name: network-contributors
+        permission: pull
+
+- name: provider-utils
+  description: Utility library for writing controllers
+  collaborators:
+    teams:
+      - name: iaas-maintainers
+        permission: push
+      - name: iaas-contributors
+        permission: pull
+      - name: metal-maintainers
+        permission: push
+      - name: metal-contributors
+        permission: pull
+      - name: network-maintainers
+        permission: push
+      - name: network-contributors
+        permission: pull
+
+# TSC / Governance
+- name: .github
+  collaborators:
+    teams:
+      - name: tsc
+        permission: push
+
+- name: community
+  description: Community engagement rules repository
+  collaborators:
+    teams:
+      - name: tsc
+        permission: push
+
+- name: enhancements
+  collaborators:
+    teams:
+      - name: tsc
+        permission: push
+
+- name: ironcore-dev.github.io
+  description: IronCore Project Landing Page and Documentation
+  collaborators:
+    teams:
+      - name: tsc
+        permission: push
+
+- name: openapi-extractor
+  description: This project extracts the OpenAPI v2 and v3 specifications of a given Kubernetes API server
+  collaborators:
+    teams:
+      - name: tsc
+        permission: push
+
+- name: repository-template
+  description: Default templates of SAP's repositories. Provides template files including LICENSE, .reuse/dep5, Code of Conduct, etc...
+  collaborators:
+    teams:
+      - name: tsc
+        permission: push
+
+- name: roadmap
+  description: Tracks cross-area or significantly impactful enhancements for the Ironcore platform.
+  collaborators:
+    teams:
+      - name: tsc
+        permission: push
+
+- name: steering
+  description: The IronCore Technical Steering Committee
+  collaborators:
+    teams:
+      - name: tsc
+        permission: push
