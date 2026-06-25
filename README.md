@@ -39,14 +39,14 @@ The community defines three roles with increasing levels of responsibility:
 | **Maintainer**   | Trusted contributor; merges and triage |
 | **TSC Member**   | Technical Steering Committee           |
 
-See [Roles & Membership](docs/roles-and-membership.md) for more details and how
+See [Roles & Membership](docs/membership.md) for more details and how
 to become a community member.
 
 ## Governance
 
 Changes to community governance (this repository) require approval
 from 4 TSC members. Changes like role nominations and revocations follow the
-process defined in [Roles & Membership](docs/roles-and-membership.md).
+process defined in [Roles & Membership](docs/membership.md).
 
 ## Automation
 
