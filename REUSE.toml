@@ -1,0 +1,31 @@
+version = 1
+SPDX-PackageName = "community"
+SPDX-PackageSupplier = "IronCore authors <ospo@sap.com>"
+SPDX-PackageDownloadLocation = "https://github.com/ironcore-dev/community"
+
+[[annotations]]
+path = [
+    ".github/**",
+    ".gitignore",
+    "CODEOWNERS",
+    "Dockerfile",
+    "Makefile",
+    "mkdocs.yml",
+    "REUSE.toml",
+    "hack/**",
+    "package-lock.json",
+    "package.json",
+    "CNAME",
+]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 SAP SE or an SAP affiliate company and IronCore contributors"
+SPDX-License-Identifier = "Apache-2.0"
+
+[[annotations]]
+path = [
+    "docs/**",
+    "README.md"
+]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 SAP SE or an SAP affiliate company and IronCore contributors"
+SPDX-License-Identifier = "Apache-2.0"
