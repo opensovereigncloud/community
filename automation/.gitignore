@@ -1,0 +1,6 @@
+.terraform/
+*.tfvars
+*.tfvars.json
+
+# State worktree (checked out from 'state' branch)
+.state/
