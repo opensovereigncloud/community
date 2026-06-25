@@ -29,6 +29,12 @@ We welcome contributions of all kinds — from code and documentation to bug rep
 get started, check out our [Contributing Guide](/contributing), [Coding Style Guide](/style-guide/coding),
 and [Documentation Style Guide](/style-guide/documentation).
 
+## Become a Community Member
+
+If you've been active in the IronCore community, by contributing and participating in our meetings, consider stepping into
+a formal community role. Our [Community Membership Guidelines](/membership) explain the different roles available and how
+you can apply for them.
+
 ## Code of Conduct
 
 The IronCore community is committed to providing a welcoming and inclusive environment for everyone. We expect all

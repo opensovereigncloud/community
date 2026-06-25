@@ -59,6 +59,7 @@ export default withMermaid({
           items: [
             { text: 'Welcome', link: '/' },
             { text: 'Contributing Guide', link: '/contributing' },
+            { text: 'Membership', link: '/membership' },
           ],
         },
         {
