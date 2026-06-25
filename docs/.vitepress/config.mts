@@ -23,14 +23,14 @@ export default withMermaid({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: 'https://ironcore.dev/' },
-      { text: 'Overview', link: 'https://ironcore.dev/overview/' },
+      { text: 'Home', link: 'https://ironcore.dev/', target: '_self' },
+      { text: 'Overview', link: 'https://ironcore.dev/overview/', target: '_self' },
       {
         text: 'Documentation',
         items: [
-          { text: 'Infrastructure as a Service', link: 'https://ironcore.dev/iaas/getting-started' },
-          { text: 'Bare Metal Management', link: 'https://ironcore.dev/baremetal/' },
-          { text: 'Network Automation', link: 'https://ironcore.dev/network-automation/' },
+          { text: 'Infrastructure as a Service', link: 'https://ironcore.dev/iaas/getting-started', target: '_self' },
+          { text: 'Bare Metal Management', link: 'https://ironcore.dev/baremetal/', target: '_self' },
+          { text: 'Network Automation', link: 'https://ironcore.dev/network-automation/', target: '_self' },
         ]
       },
       { text: 'Community', link: '/' },
