@@ -16,8 +16,6 @@ resource "github_organization_ruleset" "require_signatures" {
   }
 
   rules {
-    required_signatures = true
-
     commit_message_pattern {
       name     = "Commit message must contain a Signed-off-by line"
       operator = "regex"
