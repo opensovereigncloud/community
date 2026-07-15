@@ -1,7 +1,7 @@
 resource "github_organization_ruleset" "require_signatures" {
   name        = "Require signatures"
   target      = "branch"
-  enforcement = "evaluate"
+  enforcement = "active"
 
   conditions {
     ref_name {
@@ -29,7 +29,7 @@ resource "github_organization_ruleset" "require_signatures" {
 resource "github_organization_ruleset" "default_release" {
   name        = "Protect default and release branches"
   target      = "branch"
-  enforcement = "evaluate"
+  enforcement = "active"
 
   conditions {
     ref_name {
