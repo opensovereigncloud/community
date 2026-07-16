@@ -1,29 +1,3 @@
-resource "github_organization_ruleset" "require_signatures" {
-  name        = "Require signatures"
-  target      = "branch"
-  enforcement = "active"
-
-  conditions {
-    ref_name {
-      include = ["~ALL"]
-      exclude = []
-    }
-
-    repository_name {
-      include = ["~ALL"]
-      exclude = []
-    }
-  }
-
-  rules {
-    commit_message_pattern {
-      name     = "Commit message must contain a Signed-off-by line"
-      operator = "regex"
-      pattern  = "(?m)Signed-off-by: [^<]+ <[^@]+@[^>]+>"
-    }
-  }
-}
-
 resource "github_organization_ruleset" "default_release" {
   name        = "Protect default and release branches"
   target      = "branch"
@@ -65,6 +39,22 @@ resource "github_organization_ruleset" "default_release" {
         context        = "DCO"
         integration_id = data.github_app.apps["dco"].id
       }
+    }
+
+    required_workflows {
+      do_not_enforce_on_create = false
+
+      required_workflow {
+        repository_id = module.repositories["community"].repo_id
+        ref           = "main"
+        path          = ".github/workflows/reuse.yml"
+      }
+    }
+
+    commit_message_pattern {
+      name     = "Commit message must contain a Signed-off-by line"
+      operator = "regex"
+      pattern  = "(?m)Signed-off-by: [^<]+ <[^@]+@[^>]+>"
     }
   }
 }
