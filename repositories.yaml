@@ -1,6 +1,15 @@
 # IaaS Area
 - name: ceph-provider
   description: Ceph provider implementation of the IronCore storage interface
+  required_status_checks:
+    github-actions:
+      - integration-tests
+      - lint
+      - run
+      - kustomize-validation
+      - buildAndPush (ceph-bucket-provider, ceph-bucket-provider)
+      - buildAndPush (ceph-volume-provider, ceph-volume-provider)
+      - reuse
   collaborators:
     teams:
       - name: iaas-maintainers
@@ -19,6 +28,13 @@
 
 - name: cloud-provider-ironcore
   description: Kubernetes Cloud Controller Provider implementation for IronCore
+  required_status_checks:
+    github-actions:
+      - run
+      - Run linter
+      - Run REUSE check
+      - Run tests
+      - Run validate kustomizations
   collaborators:
     teams:
       - name: iaas-maintainers
@@ -37,6 +53,12 @@
 
 - name: gardener-extension-provider-ironcore
   description: Gardener extension controller for the IronCore cloud provider
+  required_status_checks:
+    github-actions:
+      - lint
+      - check-codegen
+      - test
+      - reuse
   collaborators:
     teams:
       - name: iaas-maintainers
@@ -46,6 +68,13 @@
 
 - name: ironcore
   description: Cloud Native Infrastructure as a Service
+  required_status_checks:
+    github-actions:
+      - check-codegen
+      - kustomize-validation
+      - lint
+      - test
+      - reuse
   collaborators:
     teams:
       - name: iaas-maintainers
@@ -55,6 +84,11 @@
 
 - name: ironcore-csi-driver
   description: Kubernetes Container Storage Interface (CSI) Driver for IronCore
+  required_status_checks:
+    github-actions:
+      - lint
+      - run
+      - kustomize-validation
   collaborators:
     teams:
       - name: iaas-maintainers
@@ -73,6 +107,9 @@
 
 - name: ironcore-in-a-box
   description: IronCore IaaS in a Box
+  required_status_checks:
+    github-actions:
+      - run-tests
   collaborators:
     teams:
       - name: iaas-maintainers
@@ -82,6 +119,11 @@
 
 - name: kubectl-ironcore
   description: kubectl plugin for ironcore
+  required_status_checks:
+    github-actions:
+      - lint
+      - test
+      - reuse
   collaborators:
     teams:
       - name: iaas-maintainers
@@ -91,6 +133,12 @@
 
 - name: libvirt-provider
   description: Libvirt provider implementation of the IronCore compute interface
+  required_status_checks:
+    github-actions:
+      - kustomize-validation
+      - lint
+      - run
+      - reuse
   collaborators:
     teams:
       - name: iaas-maintainers
@@ -100,6 +148,12 @@
 
 - name: machine-controller-manager-provider-ironcore
   description: Gardener machine controller manager provider for IronCore
+  required_status_checks:
+    github-actions:
+      - lint
+      - run
+      - check-codegen
+      - reuse
   collaborators:
     teams:
       - name: iaas-maintainers
@@ -110,6 +164,11 @@
 # Metal Area
 - name: boot-operator
   description: Kubernetes-based controller to manage Boot Infrastructure e.g. HTTPBoot, IPXEBoot
+  required_status_checks:
+    github-actions:
+      - lint
+      - Build and publish Docker image
+      - Test
   collaborators:
     teams:
       - name: metal-maintainers
@@ -136,6 +195,11 @@
         permission: pull
 
 - name: FeDHCP
+  required_status_checks:
+    github-actions:
+      - run
+      - buildAndPush
+      - lint
   collaborators:
     teams:
       - name: metal-maintainers
@@ -154,6 +218,11 @@
 
 - name: ipam
   description: k8s operator for IPAM
+  required_status_checks:
+    github-actions:
+      - reuse
+      - lint
+      - test
   collaborators:
     teams:
       - name: metal-maintainers
@@ -188,6 +257,12 @@
     - "provisioning"
     - "servermanagement"
   pages_enabled: true
+  required_status_checks:
+    github-actions:
+      - Run tests
+      - Run linter
+      - Run code generation checks
+      - Run REUSE check
   collaborators:
     teams:
       - name: metal-maintainers
@@ -233,6 +308,12 @@
 
 - name: ironcore-net
   description: Provider specific implementation of ironcore network types
+  required_status_checks:
+    github-actions:
+      - kustomize-validation
+      - lint
+      - test
+      - reuse
   collaborators:
     teams:
       - name: network-maintainers
@@ -242,6 +323,9 @@
 
 - name: metalbond
   description: Route reflector for IronCore Infrastructure Overlay Network
+  required_status_checks:
+    github-actions:
+      - run
   collaborators:
     teams:
       - name: network-maintainers
@@ -270,6 +354,9 @@
 # Multi-Area: IaaS + Metal
 - name: os-images
   description: Automates the publication of OS images as OCI artifacts
+  required_status_checks:
+    github-actions:
+      - reuse
   collaborators:
     teams:
       - name: iaas-maintainers
@@ -284,6 +371,11 @@
 # Multi-Area: IaaS + Metal + Network
 - name: controller-utils
   description: Utility library for writing Kubernetes controllers
+  required_status_checks:
+    github-actions:
+      - lint
+      - test
+      - reuse
   collaborators:
     teams:
       - name: iaas-maintainers

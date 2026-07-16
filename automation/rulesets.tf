@@ -61,7 +61,8 @@ resource "github_organization_ruleset" "default_release" {
 
     required_status_checks {
       required_check {
-        context = "DCO"
+        context        = "DCO"
+        integration_id = data.github_app.apps["dco"].id
       }
     }
   }
