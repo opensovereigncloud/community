@@ -248,6 +248,20 @@
       - name: metal-contributors
         permission: triage
 
+- name: metal-maintenance-operator
+  description: Kubernetes operator to automate bare metal server maintenance
+  homepage_url: https://ironcore.dev/metal-maintenance-operator/
+  topics:
+    - "baremetal"
+    - "operator"
+    - "maintenance"
+  collaborators:
+    teams:
+      - name: metal-maintainers
+        permission: push
+      - name: metal-contributors
+        permission: triage
+
 - name: metal-token-rotate
   description: Delivers tokens for metal-operator into Gardener
   collaborators:
