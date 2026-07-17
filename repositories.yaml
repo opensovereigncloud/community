@@ -209,19 +209,6 @@
       - name: metal-contributors
         permission: triage
 
-- name: ipam
-  description: k8s operator for IPAM
-  required_status_checks:
-    github-actions:
-      - lint
-      - test
-  collaborators:
-    teams:
-      - name: metal-maintainers
-        permission: push
-      - name: metal-contributors
-        permission: triage
-
 - name: machine-controller-manager-provider-ironcore-metal
   description: Gardener machine controller manager provider for bare metal server management
   collaborators:

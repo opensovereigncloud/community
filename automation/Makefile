@@ -20,6 +20,12 @@ apply: .state
 	$(GIT)  commit --signoff --quiet --message "Update state $$(date -u +%Y-%m-%dT%H:%M:%SZ)"
 	$(GIT)  push
 
+.PHONY: state-push
+state-push: .state
+	$(GIT)  add --update
+	$(GIT)  commit --signoff --quiet --message "Update state $$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+	$(GIT)  push
+
 .PHONY: state-status
 state-status: .state
 	$(GIT) status

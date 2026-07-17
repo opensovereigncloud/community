@@ -46,7 +46,7 @@ module "repositories" {
     {
       name        = "Required status checks"
       target      = "branch"
-      enforcement = "evaluate"
+      enforcement = "active"
       conditions = {
         ref_name = {
           include = ["~DEFAULT_BRANCH", "refs/heads/release-*"]
