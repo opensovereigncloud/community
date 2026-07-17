@@ -427,8 +427,12 @@
   collaborators:
     teams:
       - name: iaas-maintainers
+        permission: push
+      - name: iaas-contributors
         permission: triage
       - name: network-maintainers
+        permission: push
+      - name: network-contributors
         permission: triage
 
 - name: repository-template
