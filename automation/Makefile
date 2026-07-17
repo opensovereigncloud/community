@@ -16,6 +16,7 @@ plan: .state
 apply: .state
 	$(GIT)  pull
 	$(TOFU) apply
+	$(GIT)  add --update
 	$(GIT)  commit --signoff --quiet --message "Update state $$(date -u +%Y-%m-%dT%H:%M:%SZ)"
 	$(GIT)  push
 
