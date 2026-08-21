@@ -154,6 +154,19 @@
       - name: iaas-contributors
         permission: triage
 
+- name: pool-lifecycle-controller
+  description: Coordinates graceful deletion of compute nodes
+  required_status_checks:
+    github-actions:
+      - lint
+      - buildAndPush
+      - test
+  collaborators:
+    teams:
+      - name: iaas-maintainers
+        permission: push
+      - name: iaas-contributors
+        permission: triage
 # Metal Area
 - name: boot-operator
   description: Kubernetes-based controller to manage Boot Infrastructure e.g. HTTPBoot, IPXEBoot
